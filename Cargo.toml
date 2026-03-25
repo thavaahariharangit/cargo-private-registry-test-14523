@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-custom-package = { version = "0.1.0", registry = "artifactory" }
+custom-package = { version = "0.2.0", registry = "artifactory" }
