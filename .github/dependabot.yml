@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directory: "rust/cargo/with-lock/"
+    registries: 
+      - "cargo-artifactory"
+    schedule:
+      interval: "weekly"
+
+registries:
+  cargo-artifactory:
+    type: cargo-registry
+    registry: "artifactory"
+    url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
+    token: "Bearer ${{secrets.CARGO_TOKEN}}"
