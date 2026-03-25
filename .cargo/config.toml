@@ -1,0 +1,8 @@
+# Makes artifactory the default registry and saves passing --registry parameter
+[registry]
+default = "artifactory"
+global-credential-providers = ["cargo:token"]
+
+[registries.artifactory]
+index = "sparse+https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
+token = "Bearer ${secrets.CARGO_TOKEN}"
