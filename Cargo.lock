@@ -11,6 +11,6 @@ dependencies = [
 
 [[package]]
 name = "custom-package"
-version = "0.1.0"
+version = "0.2.0"
 source = "sparse+https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/"
-checksum = "40a2cce455eef2f00aec305a1f6131dd444359d02ecc501d1c88cc5b7fbfc998"
+checksum = "99c4d5cb88247727078f4e17eac62ea85e6db2b4aa4badecdce1103ed41af837"
